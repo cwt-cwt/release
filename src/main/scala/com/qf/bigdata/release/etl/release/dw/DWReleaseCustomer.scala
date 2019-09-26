@@ -39,7 +39,7 @@ object DWReleaseCustomer {
       //设置缓存级别，做缓存表会用，主题表单一不会和其他表产生关联，不用缓存
       //缓存放在存储内存中
       //常量类中具体定义，调用过来
-      val storagelevel = ReleaseConstant.SEF_STORAGE_LEVEL
+      val storagelevel = ReleaseConstant.DEF_STORAGE_LEVEL
 
       //存储方式，覆盖
       val saveMode = SaveMode.Overwrite

@@ -1,5 +1,6 @@
 package com.qf.bigdata.release.util
 
+import com.qf.bigdata.release.etl.release.udf.QFUdf
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 import org.slf4j.{Logger, LoggerFactory}
@@ -49,7 +50,17 @@ object SparkHelper {
       .getOrCreate()
     //加载自定义函数
 
+    registerFun(spark)
+
     spark
+  }
+
+  /**
+    * UDF注册
+    */
+  def registerFun(spark:SparkSession)={
+    //处理年龄段
+    spark.udf.register("getAgeRange",QFUdf.getAgeRange _)
   }
 
   /**
