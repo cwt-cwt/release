@@ -1,4 +1,4 @@
-package com.qf.bigdata.release.constanct
+package com.qf.bigdata.release.constant
 
 import org.apache.spark.storage.StorageLevel
 
@@ -26,6 +26,9 @@ object ReleaseConstant {
   val COL_RELEASE_DEVICE_NUM = "device_num"
   val COL_RELEASE_USER_COUNT = "user_count"
   val COL_RELEASE_TOTAL_COUNT = "total_count"
+  val COL_RELEASE_AGE_RANGE ="age_range"
+  val COL_RELEASE_GENDER ="gender"
+  val COL_RELEASE_AREA_CODE = "area_code"
   //------------------ods-----------
   //写库名.表名，不写库名会转到默认的库中
   val ODS_RELEASE_SESSION = "ods_release.ods_01_release_session"
@@ -35,4 +38,5 @@ object ReleaseConstant {
 
   //---------DM-----------------
   val DM_RELEASE_CUSTOMER_SOURCE ="dm_release.dm_customer_sources"
+  val DM_RELEASE_CUSTOMER_CUBE ="dm_release.dm_customer_cube"
 }

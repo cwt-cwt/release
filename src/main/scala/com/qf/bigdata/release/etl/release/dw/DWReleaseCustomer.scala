@@ -1,6 +1,6 @@
 package com.qf.bigdata.release.etl.release.dw
 
-import com.qf.bigdata.release.constanct.ReleaseConstant
+import com.qf.bigdata.release.constant.ReleaseConstant
 import com.qf.bigdata.release.enums.ReleaseStatusEnum
 import com.qf.bigdata.release.util.SparkHelper
 import org.apache.spark.SparkConf

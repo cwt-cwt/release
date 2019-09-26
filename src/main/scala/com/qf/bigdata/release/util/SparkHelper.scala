@@ -88,10 +88,8 @@ object SparkHelper {
           bdp_days.+=(cday)
           //处理差值,让可变初始时间进行累加  以天为单位
           val pday = DateUtil.dateFromat4StringDiff(cday, 1)
-
           cday = pday
         }
-
       }
     } catch {
       //如果时间格式不匹配就跳过
@@ -100,7 +98,6 @@ object SparkHelper {
         //当前log的信息和位置
         logger.error(ex.getMessage, ex)
       }
-
     }
     bdp_days
   }

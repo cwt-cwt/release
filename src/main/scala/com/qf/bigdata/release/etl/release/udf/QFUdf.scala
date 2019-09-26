@@ -2,6 +2,7 @@ package com.qf.bigdata.release.etl.release.udf
 
 import com.qf.bigdata.release.util.CommonUtil
 
+
 /**
   * spark UDF
   */
